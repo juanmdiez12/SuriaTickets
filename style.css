@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotu', sans-serif;
+}
+
+/* ====================================================== HEADER */
+
+header {
+    background-image: linear-gradient(10deg, black, rgb(255, 0, 0), #363537);
+}
+
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/img/fondo_header_naranja.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    transition: .3rem;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.barraDeBusqueda {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buscador {
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 800px;
+    height: 60px;
+    position: relative;
+    bottom: 50px;
+}
+
+.botonBuscar {
+    padding: 13px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(./assets/img/lupa.png);
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+}
+
+.botonBuscar:hover {
+    transform: scale(1.2);
+}
+
+
+/* ====================================================== CARDS */
+
+body {
+    background-image: linear-gradient(80deg, black, rgb(255, 0, 0), #363537);
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    margin: 2rem;
+    padding: .5rem;
+    transition: .3s;
+}
+
+.card:hover {
+    background-color: rgba(151, 38, 38, 0);
+    transform: scale(1.05);
+    box-shadow: 0 5px 50px -1px black;
+}
+
+.indexCards {
+    width: 985px;
+}
+
+/* ====================================================== PAGINA INGRESO Y REGISTRO*/
+
+
+.formularioIngresar {
+    background-color: #FBFBFF;
+    margin: auto;
+    width: 90%;
+    max-width: 468px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.barraFormulario {
+    border-radius: .3rem;
+    padding: .2rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+.formularioRegistrarse {
+    background-color: #FBFBFF;
+    margin: auto;
+    width: 90%;
+    max-width: 468px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tamañoCheckBox {
+    transform: scale(2);
+    margin: 1rem;
+}
+
+.tamañoCheckBox:hover {
+    transform: scale(2.2);
+}
+
+.submit {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: .2s;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+}
+
+.suriaLogoLogin {
+    height: 10rem;
+}
+
+/*====================================================== SOPORTE*/
+
+
+.textoSoporte {
+    background-color: rgba(151, 38, 38, 0);
+    box-shadow: 0 5px 50px -1px black;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 2rem 2rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgba(44, 25, 25, 0.5);
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+}
+
+.barraDeBusquedaSoporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.buscadorSoporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 600px;
+    height: 60px;
+    bottom: 50px;
+}
+
+.botonBuscarSoporte {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    margin: 1rem;
+    transition: .2s;
+}
+
+.botonBuscarSoporte:hover {
+    transform: scale(1.05);
+}
+
+
+.preguntasFrecuentesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FAQ {
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.preguntasFrecuentes,
+.preguntasFrecuentesIzq {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.preguntasFrecuentes div,
+.preguntasFrecuentesIzq div {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+    margin: 3rem;
+}
+
+.preguntasFrecuentesIzq {
+    flex-direction: row-reverse;
+}
+
+.suriaLogoFAQ {
+    width: 20rem;
+    margin: 2rem;
+}
+
+.containerFAQ {
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    padding: 1rem 1rem;
+    background-color: rgba(151, 38, 38, 0);
+    box-shadow: 0 5px 50px -1px black;
+    color: white;
+}
+
+.linkFAQ {
+        color:white;    
+}
+
+
+/*====================================================== FOOTER*/
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+}
+
+.footer_logo_img {
+    width: 10rem;
+    transition: .5s;
+}
+
+.footer_logo_img:hover {
+    rotate: 55deg;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: left;
+}
+
+.redesSociales img {
+    width: 40px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.redesSociales img:hover {
+    transform: scale(1.10);
+}
+
+/*====================================================== ARTISTAS*/
+
+.containerTaylorSwift {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/img/fondo_header_taylor_swift.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamar {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/img/fondo_header_kendrick_lamar.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamarTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.redesSocialesKendrick {
+    display: flex;
+    justify-content: right;
+}
+
+.redesSocialesKendrick img {
+    width: 40px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.redesSocialesKendrick img:hover {
+    transform: scale(1.10);
+}
+
+.containerJoji {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/img/fondo_header_joji.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerTylerTheCreator {
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/img/fondo_header_tyler_the_creator.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}

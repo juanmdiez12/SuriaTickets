@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - SuriaTickets</title>
+    <link rel="icon" href="../img/suria_logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav data-aos="fade-right">
+                <a href="../../index.html"><img class="logo" src="../img/suria_sin_fondo.png" alt=""></a>
+                <ul>
+                    <li><a href="../../index.html">INICIO</a></li>
+                    <li><a href="../pages/Ingresar.html">INGRESAR</a></li>
+                    <li><a href="../pages/Soporte.html">SOPORTE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="formularioRegistrarse" data-aos="flip-right">
+
+        <img src="../img/suria_logo.png" alt="SuriaLogo" class="suriaLogoLogin">
+
+
+
+        <form action="#" method="GET" enctype="multipart/form-data">
+
+            <div class="registrarUnaCuenta">
+                <h1>Crear cuenta</h3>
+                    <h3>¿Ya tienes una cuenta?<a href="../pages/Ingresar.html"> Ingresa aquí</a></h2>
+            </div>
+
+            <div <label for="email">E-Mail</label>
+                <input type="email" name="email" class="barraFormulario" placeholder="E-Mail" required>
+            </div>
+
+            <div <label>Contraseña</label>
+                <input type="password" name="password" class="barraFormulario" placeholder="Contraseña" required>
+            </div>
+
+            <div <label>Confirmar contraseña</label>
+                <input type="password" name="password" class="barraFormulario" placeholder="Confirmar contraseña"
+                    required>
+            </div>
+
+            <div <label for="nombre">Nombre</label>
+                <input type="text" name="name" class="barraFormulario" placeholder="Nombre" required>
+            </div>
+
+            <div <label for="apellido">Apellido</label>
+                <input type="text" name="lastName" class="barraFormulario" placeholder="Apellido" required>
+            </div>
+
+            <div <label for="paisDeResidencia">Pais de residencia</label>
+                <select name="medio" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Uruguay</option>
+                    <option value="3">Chile</option>
+                </select>
+            </div>
+
+            <div <label for="Telefono">Teléfono</label>
+                <input type="tel" name="telefono" class="barraFormulario" placeholder="Telefono">
+            </div>
+
+            <div <label for="date">Fecha de Nacimiento</label>
+                <input type="date" name="date" class="barraFormulario" min="1930-01-01">
+            </div>
+
+
+            <strong>Newsletter - Suscríbete y te recomendaremos nuevas giras y espectáculos.</strong>
+            <div>
+                <label for="aceptarNewsletter"></label>
+                <input type="checkbox" name="aceptarNewsletter" class="tamañoCheckBox">
+            </div>
+
+            <input class="submit" type="submit" value="Registrarse"></input>
+
+    </section>
+
+
+
+    </form>
+
+
+    <footer>
+        <div class="redesSociales" data-aos="zoom-out" data-aos-duration="1000">
+            <a href="https://www.instagram.com" target="_blank"><img src="../img/ig_logo.png"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/tw_logo.png"></a>
+            <a href="" target="_blank"><img src="../img/correo_logo.png"></a>
+        </div>
+        SuriaTickets &copy; 2022
+        <a class="footer_logo" data-aos="zoom-out" href=""><img class="footer_logo_img" src="../img/sol.png" alt="SuriaLogoSun"></a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    s</script>
+
+</body>
+
+</html>
