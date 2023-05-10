@@ -224,7 +224,7 @@ body {
 
 
 .textoSoporte {
-    background-color: rgba(151, 38, 38, 0);
+    background-color: #FBFBFF;
     box-shadow: 0 5px 50px -1px black;
     margin: auto;
     width: 90%;
@@ -237,7 +237,7 @@ body {
     box-shadow: 0 5px 50px -1px rgba(44, 25, 25, 0.5);
     text-align: center;
     margin-top: 3rem;
-    color: white;
+    color: black;
 }
 
 .barraDeBusquedaSoporte {
@@ -252,7 +252,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border: none;
+    border-color: black;
     border-radius: 13px;
     font-size: 20px;
     width: 600px;
@@ -261,8 +261,8 @@ body {
 }
 
 .botonBuscarSoporte {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: black;
+    color: #FBFBFF;
     font-weight: 300;
     font-size: 1rem;
     padding: 1rem 1rem;
