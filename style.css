@@ -475,21 +475,14 @@ footer {
     }
 
     .buscador {
-        width: 100% ;
+        width: 102% ;
         display: flex;
         justify-content: center;
-    }
-
-    
-
-    .botonBuscar {
-        display: flex;
-        left: 250px;
-        bottom: 100px;
+        font-size: 0.9rem;
     }
 
     .footer_logo_img {
-        width: 100%;
+        width: 90%;
     }
 
     .copy_footer {
@@ -498,7 +491,7 @@ footer {
     }
 
     footer {
-        height: 160px;
+        height: 200px;
         padding: 1rem;
     }
 
@@ -525,5 +518,18 @@ footer {
 
     .preguntasFrecuentes {
         width: 90%;
+    }
+
+    .botonBuscar {
+        left: 180px;
+        bottom: 100px;
+    }
+
+    .preguntasFrecuentesIzq {
+        width: 100%;
+    }
+
+    .preguntasFrecuentes {
+        width: 100%;
     }
 }
