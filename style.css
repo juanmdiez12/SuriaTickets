@@ -439,7 +439,7 @@ footer {
 @media screen and (max-width: 425px) {
 
     .container {
-        height: 600px;
+        height: 500px;
         border-top-left-radius: 0px;
     }
 
