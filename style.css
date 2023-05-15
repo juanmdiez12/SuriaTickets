@@ -93,7 +93,6 @@ nav ul li a:hover::after {
 }
 
 .botonBuscar {
-    padding: 13px;
     background-color: rgb(255, 255, 255);
     background-image: url(./assets/img/lupa.png);
     background-size: cover;
@@ -104,8 +103,9 @@ nav ul li a:hover::after {
     width: 40px;
     height: 40px;
     position: relative;
-    bottom: 50px;
-    right: 50px;
+    bottom: 47px;
+    padding: 10px;
+    right: 6%;
 }
 
 .botonBuscar:hover {
@@ -382,7 +382,7 @@ footer {
     height: 500px;
     background-image: url(./assets/img/fondo_header_kendrick_lamar.png);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     position: relative;
     border-top-left-radius: 485px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -448,24 +448,23 @@ footer {
     }
 
     .containerTaylorSwift {
-        height: 600px;
+        height: 500px;
         border-top-left-radius: 0px;
         background-position: right;
     }
 
     .containerKendrickLamar {
-        height: 600px;
+        height: 500px;
         border-top-left-radius: 0px;
-        background-position: left;
     }
 
     .containerJoji {
-        height: 600px;
+        height: 500px;
         border-top-left-radius: 0px;
     }
 
     .containerTylerTheCreator {
-        height: 600px;
+        height: 500px;
         border-top-left-radius: 0px;
     }
 
@@ -485,7 +484,7 @@ footer {
     }
 
     .botonBuscar {
-        left: 175px;
+        left: 80%;
         bottom: 100px;
     }
 
