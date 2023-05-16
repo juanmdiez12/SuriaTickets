@@ -389,7 +389,7 @@ footer {
 .containerKendrickLamar {
     width: 100%;
     height: 500px;
-    background-image: url(./assets/img/fondo_header_kendrick_lamar.png);
+    background-image: url(./assets/img/kendrick_carousel_dos.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -406,11 +406,21 @@ footer {
     color: white;
     padding: 1rem;
     border-radius: 1rem;
+    width: 50%;
 }
 
 .redesSocialesKendrick {
     display: flex;
     justify-content: right;
+}
+
+.tituloMapaKendrick {
+    color:#FBFBFF;
+}
+
+.redesSocialesKendrick {
+    color:#FBFBFF;
+    margin: 1rem;    
 }
 
 .redesSocialesKendrick img {
@@ -426,9 +436,11 @@ footer {
 #carouselExample {
     width: 50%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 1rem;
+}
+
+.mapaKendrickLamar {
+    width: 50%;
     margin: 1rem;
 }
 
