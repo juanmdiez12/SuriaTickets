@@ -155,7 +155,7 @@ body {
     background-color: #FBFBFF;
     margin: auto;
     width: 90%;
-    max-width: 468px;
+    max-width: 450px;
     padding: 2rem 2rem;
     border-radius: 20px;
     display: flex;
@@ -172,6 +172,7 @@ body {
     padding: .2rem;
     background-color: white;
     margin: 1rem;
+    width: 80%;
 }
 
 .formularioRegistrarse {
@@ -218,6 +219,14 @@ body {
 
 .suriaLogoLogin {
     height: 10rem;
+}
+
+.ingresarATuCuenta h3 {
+    margin-bottom: .5rem;
+}
+
+.registrarUnaCuenta h3 {
+    margin-bottom: .5rem;
 }
 
 /*====================================================== SOPORTE*/
@@ -300,7 +309,7 @@ body {
 
 .preguntasFrecuentes div,
 .preguntasFrecuentesIzq div {
-    width: 60%;
+    width: 100%;
     margin: auto;
     text-align: left;
     border-radius: 10px;
@@ -414,6 +423,15 @@ footer {
     transform: scale(1.10);
 }
 
+#carouselExample {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
 .containerJoji {
     width: 100%;
     height: 500px;
@@ -436,7 +454,49 @@ footer {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1050px) {
+
+    .indexCards {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .buscador {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonBuscar {
+        left: 93%;
+        bottom: 100px;
+    }
+
+    .suriaLogoFAQ {
+        display: none;
+    }
+
+    .containerFAQ {
+        width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .preguntasFrecuentes {
+        width: 100%;
+    }
+
+    .preguntasFrecuentesIzq {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
 
     .container {
         height: 500px;
