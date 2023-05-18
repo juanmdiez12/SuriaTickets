@@ -11,6 +11,9 @@ header {
     background-image: linear-gradient(10deg, black, rgb(255, 0, 0), #363537);
 }
 
+.tituloIndex {
+    color: rgba(216, 191, 216, 0);
+}
 
 .container {
     width: 100%;
@@ -293,7 +296,10 @@ body {
     align-items: center;
 }
 
-.FAQ {
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 2rem;
     margin-top: 3rem;
     color: white;
@@ -515,7 +521,7 @@ footer {
         border-top-left-radius: 0px;
     }
 
-    .FAQ {
+    .titulos {
         display: flex;
         justify-content: center;
     }
