@@ -1,0 +1,91 @@
+.containerTaylorSwift {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/fondo_header_taylor_swift.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamar {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/kendrick_lamar_header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamarTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 50%;
+}
+
+.redesSocialesKendrick {
+    display: flex;
+    justify-content: right;
+}
+
+.tituloMapaKendrick {
+    color: #FBFBFF;
+}
+
+.redesSocialesKendrick {
+    color: #FBFBFF;
+}
+
+.redesSocialesKendrick img {
+    width: 40px;
+    margin: 25px 5px;
+    display: block;
+}
+
+.redesSocialesKendrick img:hover {
+    transform: scale(1.10);
+}
+
+#carouselExample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin: 1rem;
+}
+
+.mapaKendrickLamar {
+    width: 95%;
+    margin: 1rem;
+}
+
+.containerJoji {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/fondo_header_joji.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerTylerTheCreator {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/tyler_the_creator_header.jpeg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}

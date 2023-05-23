@@ -1,0 +1,108 @@
+header {
+    background-image: linear-gradient(10deg, black, rgb(255, 0, 0), #363537);
+}
+
+.tituloIndex {
+    color: rgba(255, 0, 255, 0);
+    height: .5px;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/img/fondo_header_naranja.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: 485px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    transition: .3rem;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+.barraDeBusqueda {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.buscador {
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 800px;
+    height: 60px;
+    position: relative;
+    bottom: 50px;
+}
+
+.botonBuscar {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../assets/img/lupa.png);
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 47px;
+    padding: 10px;
+    right: 6%;
+}
+
+.botonBuscar:hover {
+    transform: scale(1.2);
+}

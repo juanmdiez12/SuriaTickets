@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotu', sans-serif;
+}
+
+/* ===== HEADER ===== */
+@import "_header.scss";
+/* ===== CARDS ===== */
+@import "_cards.scss";
+/* ===== PAGINA INGRESO Y REGISTRO ===== */
+@import "_paginaIngresoRegistro.scss";
+/* ===== SOPORTE ===== */
+@import "_soporte.scss";
+/* ===== FOOTER ===== */
+@import "_footer.scss";
+/* ===== ARTISTAS ===== */
+@import "_artistas.scss";
+/* ===== RESPONSIVE ===== */
+@import "_responsive.scss";

@@ -1,0 +1,740 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gotu", sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-image: linear-gradient(10deg, black, rgb(255, 0, 0), #363537);
+}
+
+.tituloIndex {
+  color: rgba(255, 0, 255, 0);
+  height: 0.5px;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/img/fondo_header_naranja.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 485px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 180px;
+  cursor: pointer;
+  -webkit-transition: 0.3rem;
+  transition: 0.3rem;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+.barraDeBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.buscador {
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
+  font-size: 20px;
+  width: 800px;
+  height: 60px;
+  position: relative;
+  bottom: 50px;
+}
+
+.botonBuscar {
+  background-color: rgb(255, 255, 255);
+  background-image: url(../assets/img/lupa.png);
+  background-size: cover;
+  background-position: center center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 47px;
+  padding: 10px;
+  right: 6%;
+}
+
+.botonBuscar:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* ===== CARDS ===== */
+body {
+  background-image: linear-gradient(80deg, black, rgb(255, 0, 0), #363537);
+}
+
+.cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  width: 1000px;
+  border-radius: 10px;
+  color: white;
+  margin: 2rem;
+  padding: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: rgba(151, 38, 38, 0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 50px -1px black;
+          box-shadow: 0 5px 50px -1px black;
+}
+
+.indexCards {
+  width: 985px;
+}
+
+/* ===== PAGINA INGRESO Y REGISTRO ===== */
+.formularioIngresar {
+  background-color: #FBFBFF;
+  margin: auto;
+  width: 90%;
+  max-width: 450px;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.barraFormulario {
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  background-color: white;
+  margin: 1rem;
+  width: 80%;
+}
+
+.formularioRegistrarse {
+  background-color: #FBFBFF;
+  margin: auto;
+  width: 90%;
+  max-width: 468px;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tamañoCheckBox {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 1rem;
+}
+
+.tamañoCheckBox:hover {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+}
+
+.submit {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.submit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.suriaLogoLogin {
+  height: 10rem;
+}
+
+.ingresarATuCuenta h3 {
+  margin-bottom: 0.5rem;
+}
+
+.registrarUnaCuenta h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== SOPORTE ===== */
+.textoSoporte {
+  background-color: #FBFBFF;
+  -webkit-box-shadow: 0 5px 50px -1px black;
+          box-shadow: 0 5px 50px -1px black;
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  padding: 2rem 2rem;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 50px -1px rgba(44, 25, 25, 0.5);
+          box-shadow: 0 5px 50px -1px rgba(44, 25, 25, 0.5);
+  text-align: center;
+  margin-top: 3rem;
+  color: black;
+}
+
+.barraDeBusquedaSoporte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.buscadorSoporte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-color: black;
+  border-radius: 13px;
+  font-size: 20px;
+  width: 600px;
+  height: 60px;
+  bottom: 50px;
+}
+
+.botonBuscarSoporte {
+  background-color: black;
+  color: #FBFBFF;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.botonBuscarSoporte:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.preguntasFrecuentesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.preguntasFrecuentes,
+.preguntasFrecuentesIzq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.preguntasFrecuentes div,
+.preguntasFrecuentesIzq div {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  border-radius: 10px;
+  margin: 3rem;
+}
+
+.preguntasFrecuentesIzq {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.suriaLogoFAQ {
+  width: 20rem;
+  margin: 2rem;
+}
+
+.containerFAQ {
+  -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+  padding: 1rem 1rem;
+  background-color: rgba(151, 38, 38, 0);
+  -webkit-box-shadow: 0 5px 50px -1px black;
+          box-shadow: 0 5px 50px -1px black;
+  color: white;
+}
+
+.linkFAQ {
+  color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  color: white;
+}
+
+.footer_logo_img {
+  width: 10rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer_logo_img:hover {
+  rotate: 55deg;
+}
+
+.redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.redesSociales img {
+  width: 40px;
+  display: block;
+  margin: 5px;
+}
+
+.redesSociales img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* ===== ARTISTAS ===== */
+.containerTaylorSwift {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/img/fondo_header_taylor_swift.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  border-top-left-radius: 485px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamar {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/img/kendrick_lamar_header.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 485px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerKendrickLamarTexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.redesSocialesKendrick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.tituloMapaKendrick {
+  color: #FBFBFF;
+}
+
+.redesSocialesKendrick {
+  color: #FBFBFF;
+}
+
+.redesSocialesKendrick img {
+  width: 40px;
+  margin: 25px 5px;
+  display: block;
+}
+
+.redesSocialesKendrick img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#carouselExample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  margin: 1rem;
+}
+
+.mapaKendrickLamar {
+  width: 95%;
+  margin: 1rem;
+}
+
+.containerJoji {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/img/fondo_header_joji.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 485px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.containerTylerTheCreator {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/img/tyler_the_creator_header.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  border-top-left-radius: 485px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1050px) {
+  .indexCards {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .buscador {
+    width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .botonBuscar {
+    left: 93%;
+    bottom: 100px;
+  }
+  .suriaLogoFAQ {
+    display: none;
+  }
+  .containerFAQ {
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .preguntasFrecuentes {
+    width: 100%;
+  }
+  .preguntasFrecuentesIzq {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .titulos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body {
+    width: 100%;
+  }
+  .containerTaylorSwift {
+    height: 500px;
+    border-top-left-radius: 0px;
+    background-position: right;
+  }
+  .containerKendrickLamar {
+    height: 500px;
+    border-top-left-radius: 0px;
+    background-position: right;
+  }
+  .containerJoji {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .containerTylerTheCreator {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .indexCards {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .buscador {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.9rem;
+  }
+  .botonBuscar {
+    left: 80%;
+    bottom: 100px;
+  }
+  .footer_logo_img {
+    width: 70%;
+    margin-left: 1rem;
+  }
+  .copy_footer {
+    padding-left: 1rem;
+  }
+  footer {
+    height: 200px;
+    padding: 0.1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .redesSociales img {
+    width: 80%;
+  }
+  .buscadorSoporte {
+    width: 100%;
+  }
+  .textoSoporte {
+    border-radius: 30px;
+  }
+  .suriaLogoFAQ {
+    display: none;
+  }
+  .containerFAQ {
+    width: 100%;
+    padding: 1rem;
+  }
+  .preguntasFrecuentes {
+    width: 90%;
+  }
+  .preguntasFrecuentesIzq {
+    width: 100%;
+  }
+  .preguntasFrecuentes {
+    width: 100%;
+  }
+  .barraDeBusqueda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}

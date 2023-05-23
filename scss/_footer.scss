@@ -1,0 +1,32 @@
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+}
+
+.footer_logo_img {
+    width: 10rem;
+    transition: .5s;
+}
+
+.footer_logo_img:hover {
+    rotate: 55deg;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: left;
+}
+
+.redesSociales img {
+    width: 40px;
+    display: block;
+    margin: 5px;
+}
+
+.redesSociales img:hover {
+    transform: scale(1.10);
+}

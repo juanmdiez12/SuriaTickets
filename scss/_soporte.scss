@@ -1,0 +1,107 @@
+.textoSoporte {
+    background-color: #FBFBFF;
+    box-shadow: 0 5px 50px -1px black;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 2rem 2rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgba(44, 25, 25, 0.5);
+    text-align: center;
+    margin-top: 3rem;
+    color: black;
+}
+
+.barraDeBusquedaSoporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.buscadorSoporte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-color: black;
+    border-radius: 13px;
+    font-size: 20px;
+    width: 600px;
+    height: 60px;
+    bottom: 50px;
+}
+
+.botonBuscarSoporte {
+    background-color: black;
+    color: #FBFBFF;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    margin: 1rem;
+    transition: .2s;
+}
+
+.botonBuscarSoporte:hover {
+    transform: scale(1.05);
+}
+
+
+.preguntasFrecuentesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.preguntasFrecuentes,
+.preguntasFrecuentesIzq {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.preguntasFrecuentes div,
+.preguntasFrecuentesIzq div {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+    margin: 3rem;
+}
+
+.preguntasFrecuentesIzq {
+    flex-direction: row-reverse;
+}
+
+.suriaLogoFAQ {
+    width: 20rem;
+    margin: 2rem;
+}
+
+.containerFAQ {
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    padding: 1rem 1rem;
+    background-color: rgba(151, 38, 38, 0);
+    box-shadow: 0 5px 50px -1px black;
+    color: white;
+}
+
+.linkFAQ {
+    color: white;
+}

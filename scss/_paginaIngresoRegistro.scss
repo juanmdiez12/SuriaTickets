@@ -1,0 +1,77 @@
+.formularioIngresar {
+    background-color: #FBFBFF;
+    margin: auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.barraFormulario {
+    border-radius: .3rem;
+    padding: .2rem;
+    background-color: white;
+    margin: 1rem;
+    width: 80%;
+}
+
+.formularioRegistrarse {
+    background-color: #FBFBFF;
+    margin: auto;
+    width: 90%;
+    max-width: 468px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tamañoCheckBox {
+    transform: scale(2);
+    margin: 1rem;
+}
+
+.tamañoCheckBox:hover {
+    transform: scale(2.2);
+}
+
+.submit {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: .2s;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+}
+
+.suriaLogoLogin {
+    height: 10rem;
+}
+
+.ingresarATuCuenta h3 {
+    margin-bottom: .5rem;
+}
+
+.registrarUnaCuenta h3 {
+    margin-bottom: .5rem;
+}
