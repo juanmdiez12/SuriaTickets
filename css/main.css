@@ -137,6 +137,7 @@ nav ul li a:hover::after {
 /* ===== CARDS ===== */
 body {
   background-image: linear-gradient(80deg, black, rgb(255, 0, 0), #363537);
+  overflow-x: hidden;
 }
 
 html {
