@@ -374,6 +374,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: hidden;
 }
 
 .titulos {
@@ -402,6 +403,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  overflow-x: hidden;
 }
 
 .preguntasFrecuentes div,
@@ -411,6 +413,7 @@ html {
   text-align: left;
   border-radius: 10px;
   margin: 3rem;
+  overflow-x: hidden;
 }
 
 .preguntasFrecuentesIzq {
