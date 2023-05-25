@@ -139,6 +139,10 @@ body {
   background-image: linear-gradient(80deg, black, rgb(255, 0, 0), #363537);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +509,7 @@ footer {
           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.containerKendrickLamarTexto {
+.kendrickLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,12 +520,26 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem;
+  width: 30%;
+}
+
+.containerArtistasTexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
   background-color: black;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
-  width: 50%;
+  width: 98%;
 }
 
 .redesSocialesKendrick {
@@ -563,7 +581,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 95%;
+  width: 98%;
   margin: 1rem;
 }
 
