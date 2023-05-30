@@ -562,12 +562,16 @@ footer {
 
 .logoArtista img {
   width: 20%;
+  margin-top: 1rem;
 }
 
 .containerArtistasTexto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -580,14 +584,11 @@ footer {
   color: white;
   padding: 1rem;
   border-radius: 1rem;
-  width: 92%;
+  width: 98%;
 }
 
 .tituloMapaArtista {
   color: #FBFBFF;
-}
-
-.submitComprar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,10 +596,29 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.tituloMapaArtista h1 {
+  text-decoration: underline;
+}
+
+.submitComprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   font-weight: 500;
   font-size: 2rem;
@@ -650,15 +670,18 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
   background-color: black;
   color: white;
   padding: 0.5rem;
   border-radius: 1rem;
-  width: 93%;
+  margin-left: 14rem;
+  width: 75%;
 }
 
 .mapaArtista {
@@ -674,6 +697,10 @@ footer {
           align-items: center;
   width: 1000px;
   margin: 1rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 .containerJoji {
@@ -738,6 +765,12 @@ footer {
   .mapaArtista {
     width: 93%;
   }
+  .containerArtistasTexto {
+    width: 95.5%;
+  }
+  #carouselExample {
+    margin-left: 5.5rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .container {
@@ -793,7 +826,7 @@ footer {
     font-size: 0.9rem;
   }
   .botonBuscar {
-    left: 80%;
+    left: 82%;
     bottom: 100px;
   }
   .footer_logo_img {
@@ -846,5 +879,12 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .containerArtistasTexto {
+    width: 90%;
+  }
+  #carouselExample {
+    margin-left: 1.2rem;
+    width: 90%;
   }
 }

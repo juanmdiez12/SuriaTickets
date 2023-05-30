@@ -40,6 +40,14 @@
     .mapaArtista {
         width: 93%;
     }
+
+    .containerArtistasTexto {
+        width: 95.5%;
+    }
+
+    #carouselExample {
+        margin-left: 5.5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -100,7 +108,7 @@
     }
 
     .botonBuscar {
-        left: 80%;
+        left: 82%;
         bottom: 100px;
     }
 
@@ -157,5 +165,14 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .containerArtistasTexto {
+        width: 90%;
+    }
+
+    #carouselExample {
+        margin-left: 1.2rem;
+        width: 90%;
     }
 }
