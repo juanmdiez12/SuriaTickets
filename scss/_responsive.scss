@@ -64,6 +64,32 @@
         border-top-left-radius: 0px;
     }
 
+    .logo {
+        width: 9rem;
+        position: relative;
+        top: 0;
+    }
+
+    .logoIndex {
+        width: 12rem;
+        position: relative;
+        top: 0;
+    }
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.300);
+        box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: list-item;
+            }
+        }
+    }
+
     .titulos {
         display: flex;
         justify-content: center;
@@ -135,8 +161,10 @@
         overflow: hidden;
     }
 
-    .redesSociales img {
-        width: 80%;
+    .redesSociales {
+        img {
+            width: 70%;
+        }
     }
 
     .buscadorSoporte {
@@ -154,13 +182,13 @@
     .suriaLogoFAQResponsive {
         display: block;
         width: 10rem;
-        margin: 1rem;
+        margin: 0;
     }
 
     .containerFAQ {
         width: 100%;
         padding: 1rem;
-        margin: 1rem;
+        margin: 0;
     }
 
     .preguntasFrecuentes {

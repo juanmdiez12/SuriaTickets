@@ -58,6 +58,7 @@ nav ul {
           flex: 1;
   text-align: right;
   padding-right: 30px;
+  margin-top: 40px;
 }
 nav ul li {
   display: inline-block;
@@ -87,12 +88,27 @@ nav ul li a:hover::after {
 }
 
 .logo {
-  width: 180px;
+  width: 210px;
   cursor: pointer;
   -webkit-transition: 0.3rem;
   transition: 0.3rem;
+  position: absolute;
+  top: -2rem;
 }
 .logo:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.logoIndex {
+  width: 210px;
+  cursor: pointer;
+  -webkit-transition: 0.3rem;
+  transition: 0.3rem;
+  position: absolute;
+  top: -2rem;
+}
+.logoIndex:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -893,6 +909,28 @@ footer {
     height: 500px;
     border-top-left-radius: 0px;
   }
+  .logo {
+    width: 9rem;
+    position: relative;
+    top: 0;
+  }
+  .logoIndex {
+    width: 12rem;
+    position: relative;
+    top: 0;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: list-item;
+  }
   .titulos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -961,7 +999,7 @@ footer {
     overflow: hidden;
   }
   .redesSociales img {
-    width: 80%;
+    width: 70%;
   }
   .buscadorSoporte {
     width: 100%;
@@ -975,12 +1013,12 @@ footer {
   .suriaLogoFAQResponsive {
     display: block;
     width: 10rem;
-    margin: 1rem;
+    margin: 0;
   }
   .containerFAQ {
     width: 100%;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0;
   }
   .preguntasFrecuentes {
     width: 90%;
