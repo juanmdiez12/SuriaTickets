@@ -397,6 +397,7 @@ form ::placeholder {
   border-style: groove;
   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) orange rgba(0, 0, 0, 0);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .botonBuscarSoporte {
@@ -429,6 +430,7 @@ form ::placeholder {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
+  text-align: center;
 }
 
 .titulos {
