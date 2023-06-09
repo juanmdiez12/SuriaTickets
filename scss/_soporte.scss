@@ -28,30 +28,33 @@
     align-items: center;
     padding: 10px;
     border-color: black;
-    border-radius: 13px;
-    font-size: 20px;
+    border-radius: .3rem;
     width: 600px;
     height: 60px;
     bottom: 50px;
+    background: transparent;
+    outline: none;
+    border-style: groove;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) orange rgba(0, 0, 0, 0);
+    font-size: 1.5rem;
 }
 
 .botonBuscarSoporte {
     background-color: black;
     color: #FBFBFF;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1rem 1rem;
     border: none;
     border-radius: .5em;
     cursor: pointer;
-    margin: 1rem;
+    margin-top: 3rem;
     transition: .2s;
-}
 
-.botonBuscarSoporte:hover {
-    transform: scale(1.05);
+    &:hover {
+        transform: scale(1.05);
+    }
 }
-
 
 .preguntasFrecuentesContainer {
     display: flex;
@@ -97,6 +100,12 @@
     margin: 2rem;
 }
 
+.suriaLogoFAQResponsive {
+    width: 20rem;
+    margin: 2rem;
+    display: none;
+}
+
 .containerFAQ {
     box-shadow: 0 5px 50px -1px rgb(0 0 0 / 50%);
     padding: 1rem 1rem;
@@ -106,5 +115,73 @@
 }
 
 .linkFAQ {
-    color: white;
+    position: relative;
+    padding: 5px;
+    color: #b79726;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+.rating {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0 50px 8%;
+    color: gray;
+}
+
+.rating label {
+    float: right;
+    padding: 0;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.rating label::before {
+    content: "\2606";
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.rating label span {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: 0.15s ease-out;
+    pointer-events: none;
+    letter-spacing: -2px;
+    transform: translateY(-50%);
+}
+
+.rating label:hover span {
+    opacity: 1;
+    transform: none;
+    letter-spacing: 0;
+}
+
+.rating label:hover::before {
+    color: orange;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 4px);
+}
+
+.rating label:hover~*::before {
+    color: orange;
+    opacity: 0.6;
+    filter: drop-shadow(0 0 4px);
+}
+
+.rating input:checked~label::before {
+    content: "\2605";
+    color: orange;
+    filter: drop-shadow(0 0 4px);
+    transform: rotate(0.2turn);
+    transition-delay: calc(0.1 * attr(data-idx integer));
 }

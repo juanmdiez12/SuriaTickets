@@ -24,6 +24,8 @@ header {
 .tituloIndex {
   color: rgba(255, 0, 255, 0);
   height: 0.5px;
+  position: absolute;
+  right: 100000px;
 }
 
 .container {
@@ -50,19 +52,6 @@ nav {
       flex-wrap: wrap;
   padding: 10px 0;
 }
-
-.logo {
-  width: 180px;
-  cursor: pointer;
-  -webkit-transition: 0.3rem;
-  transition: 0.3rem;
-}
-
-.logo:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
 nav ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -70,19 +59,16 @@ nav ul {
   text-align: right;
   padding-right: 30px;
 }
-
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 30px;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   position: relative;
 }
-
 nav ul li a::after {
   content: "";
   width: 0;
@@ -97,8 +83,15 @@ nav ul li a::after {
   transition: width 0.3s;
 }
 
-nav ul li a:hover::after {
-  width: 50%;
+.logo {
+  width: 180px;
+  cursor: pointer;
+  -webkit-transition: 0.3rem;
+  transition: 0.3rem;
+}
+.logo:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .barraDeBusqueda {
@@ -137,7 +130,6 @@ nav ul li a:hover::after {
   padding: 10px;
   right: 6%;
 }
-
 .botonBuscar:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -156,6 +148,10 @@ nav ul li a:hover::after {
   margin-bottom: 2rem;
 }
 
+.indexCards {
+  width: 865px;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,13 +161,20 @@ nav ul li a:hover::after {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  width: 1000px;
+  width: 880px;
   border-radius: 10px;
   color: white;
-  margin: 2rem;
+  margin: 1rem;
   padding: 0.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.card:hover {
+  background-color: rgba(151, 38, 38, 0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 50px -1px black;
+          box-shadow: 0 5px 50px -1px black;
 }
 
 .cardCancelada {
@@ -183,25 +186,24 @@ nav ul li a:hover::after {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  width: 1000px;
+  width: 880px;
   border-radius: 10px;
   color: white;
-  margin: 2rem;
+  margin: 1rem;
   padding: 0.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-.card:hover {
-  background-color: rgba(151, 38, 38, 0);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0 5px 50px -1px black;
-          box-shadow: 0 5px 50px -1px black;
+.cardCancelada h2 {
+  text-decoration: line-through;
 }
-
+.cardCancelada h3 {
+  text-decoration: line-through;
+}
+.cardCancelada h4 {
+  text-decoration: line-through;
+}
 .cardCancelada:hover {
-  color: red;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transform: scale(1.05);
@@ -209,49 +211,60 @@ nav ul li a:hover::after {
   -webkit-box-shadow: 0 5px 50px -1px black;
           box-shadow: 0 5px 50px -1px black;
 }
-
-.cardCancelada h2 {
-  color: white;
+.cardCancelada:hover h1 {
+  text-decoration: underline;
 }
-
-.indexCards {
-  width: 985px;
+.cardCancelada:hover h2 {
+  color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.cardCancelada:hover h3 {
+  color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.cardCancelada:hover h4 {
+  color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* ===== PAGINA INGRESO Y REGISTRO ===== */
-.formularioIngresar {
-  background-color: #FBFBFF;
-  margin: auto;
-  width: 90%;
-  max-width: 450px;
-  padding: 2rem 2rem;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .barraFormulario {
   border-radius: 0.3rem;
   padding: 0.2rem;
   background-color: white;
-  margin: 1rem;
+  margin: 2rem;
   width: 80%;
+  background: transparent;
+  outline: none;
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) orange rgba(0, 0, 0, 0);
+  font-size: 1rem;
 }
 
-.formularioRegistrarse {
+form ::-webkit-input-placeholder {
+  color: black;
+}
+
+form ::-moz-placeholder {
+  color: black;
+}
+
+form :-ms-input-placeholder {
+  color: black;
+}
+
+form ::-ms-input-placeholder {
+  color: black;
+}
+
+form ::placeholder {
+  color: black;
+}
+
+.formularioRegistrarseIngresar {
   background-color: #FBFBFF;
   margin: auto;
   width: 90%;
@@ -268,11 +281,12 @@ nav ul li a:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: black;
 }
 
 .tamañoCheckBox {
@@ -287,7 +301,7 @@ nav ul li a:hover::after {
 }
 
 .submit {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   font-weight: 300;
   font-size: 1rem;
@@ -309,12 +323,17 @@ nav ul li a:hover::after {
   height: 10rem;
 }
 
-.ingresarATuCuenta h3 {
-  margin-bottom: 0.5rem;
+.cuenta h3 {
+  margin-bottom: 3rem;
 }
 
-.registrarUnaCuenta h3 {
-  margin-bottom: 0.5rem;
+.linkColorRegistroIngreso {
+  position: relative;
+  padding: 5px;
+  color: orangered;
+  text-decoration: underline;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
 /* ===== SOPORTE ===== */
@@ -369,27 +388,30 @@ nav ul li a:hover::after {
           align-items: center;
   padding: 10px;
   border-color: black;
-  border-radius: 13px;
-  font-size: 20px;
+  border-radius: 0.3rem;
   width: 600px;
   height: 60px;
   bottom: 50px;
+  background: transparent;
+  outline: none;
+  border-style: groove;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) orange rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
 }
 
 .botonBuscarSoporte {
   background-color: black;
   color: #FBFBFF;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 1rem 1rem;
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
-  margin: 1rem;
+  margin-top: 3rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .botonBuscarSoporte:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -460,6 +482,12 @@ nav ul li a:hover::after {
   margin: 2rem;
 }
 
+.suriaLogoFAQResponsive {
+  width: 20rem;
+  margin: 2rem;
+  display: none;
+}
+
 .containerFAQ {
   -webkit-box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 50px -1px rgba(0, 0, 0, 0.5);
@@ -471,7 +499,84 @@ nav ul li a:hover::after {
 }
 
 .linkFAQ {
-  color: white;
+  position: relative;
+  padding: 5px;
+  color: #b79726;
+  text-decoration: underline;
+  overflow: hidden;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  text-transform: capitalize;
+  padding: 0 50px 8%;
+  color: gray;
+}
+
+.rating label {
+  float: right;
+  padding: 0;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.rating label::before {
+  content: "☆";
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.rating label span {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  font-size: 1rem;
+  white-space: nowrap;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  pointer-events: none;
+  letter-spacing: -2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.rating label:hover span {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  letter-spacing: 0;
+}
+
+.rating label:hover::before {
+  color: orange;
+  opacity: 0.6;
+  -webkit-filter: drop-shadow(0 0 4px);
+          filter: drop-shadow(0 0 4px);
+}
+
+.rating label:hover ~ *::before {
+  color: orange;
+  opacity: 0.6;
+  -webkit-filter: drop-shadow(0 0 4px);
+          filter: drop-shadow(0 0 4px);
+}
+
+.rating input:checked ~ label::before {
+  content: "★";
+  color: orange;
+  -webkit-filter: drop-shadow(0 0 4px);
+          filter: drop-shadow(0 0 4px);
+  -webkit-transform: rotate(0.2turn);
+          transform: rotate(0.2turn);
+  -webkit-transition-delay: calc(0.1 * attr(data-idx integer));
+          transition-delay: calc(0.1 * attr(data-idx integer));
 }
 
 /* ===== FOOTER ===== */
@@ -486,7 +591,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem;
+  padding: 2.5rem;
   color: white;
 }
 
@@ -508,13 +613,11 @@ footer {
       -ms-flex-pack: left;
           justify-content: left;
 }
-
 .redesSociales img {
   width: 40px;
   display: block;
   margin: 5px;
 }
-
 .redesSociales img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -559,7 +662,6 @@ footer {
   width: 100%;
   padding: 1rem;
 }
-
 .logoArtista img {
   width: 20%;
   margin-top: 1rem;
@@ -602,7 +704,6 @@ footer {
   width: 100%;
   padding: 1rem;
 }
-
 .tituloMapaArtista h1 {
   text-decoration: underline;
 }
@@ -630,7 +731,6 @@ footer {
   transition: 0.2s;
   margin: 1rem;
 }
-
 .submitComprar:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -650,13 +750,11 @@ footer {
           justify-content: right;
   padding: 1rem;
 }
-
 .redesSocialesArtista img {
   width: 40px;
   margin: 25px 5px;
   display: block;
 }
-
 .redesSocialesArtista img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -773,6 +871,19 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .cuenta {
+    width: 92%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .container {
     height: 500px;
     border-top-left-radius: 0px;
@@ -856,9 +967,15 @@ footer {
   .suriaLogoFAQ {
     display: none;
   }
+  .suriaLogoFAQResponsive {
+    display: block;
+    width: 10rem;
+    margin: 1rem;
+  }
   .containerFAQ {
     width: 100%;
     padding: 1rem;
+    margin: 1rem;
   }
   .preguntasFrecuentes {
     width: 90%;
@@ -888,3 +1005,16 @@ footer {
     width: 90%;
   }
 }
+/*
+                                            ⢀⣠⣤⣶⣶⣶⣶⣶⣤⣄⡀⠀⠀
+                                        ⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⡀
+                                    ⣠⣴⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣵⣄
+                                 ⢾⣻⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡀
+                                ⠸⣽⣻⠃⣿⡿⠋⣉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣏⡟⠉⡉⢻⣿⡌⣿⣳⡥⠀⠀⠀⠀
+                                ⢜⣳⡟⢸⣿⣷⣄⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣠⣼⣿⣇⢸⢧⢣⠀   HOLA PROFE
+                                ⠨⢳⠇⣸⣿⣿⢿⣿⣿⣿⣿⡿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠀⡟⢆⠀
+                                ⠈⠀⣾⣿⣿⣼⣿⣿⣿⣿⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣽⣿⣿⠐⠈⠀⠀
+                               ⢀⣀⣼⣷⣭⣛⣯⡝⠿⢿⣛⣋⣤⣤⣀⣉⣛⣻⡿⢟⣵⣟⣯⣶⣿⣄⡀⠀
+                             ⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣾⣶⣶⣴⣾⣿⣿⣿⣿⣿⣿⢿⣿⣿⣧
+                             ⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⡿ 
+*/

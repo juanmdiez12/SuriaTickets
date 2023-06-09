@@ -26,11 +26,11 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-}
 
-.logoArtista img {
-    width: 20%;
-    margin-top: 1rem;
+    img {
+        width: 20%;
+        margin-top: 1rem;
+    }
 }
 
 .containerArtistasTexto {
@@ -53,10 +53,10 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-}
 
-.tituloMapaArtista h1 {
-    text-decoration: underline;
+    h1 {
+        text-decoration: underline;
+    }
 }
 
 .submitComprar {
@@ -73,10 +73,10 @@
     cursor: pointer;
     transition: .2s;
     margin: 1rem;
-}
 
-.submitComprar:hover {
-    transform: scale(1.05);
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .redesSocialesArtista {
@@ -85,16 +85,16 @@
     flex-direction: row;
     justify-content: right;
     padding: 1rem;
-}
 
-.redesSocialesArtista img {
-    width: 40px;
-    margin: 25px 5px;
-    display: block;
-}
+    img {
+        width: 40px;
+        margin: 25px 5px;
+        display: block;
 
-.redesSocialesArtista img:hover {
-    transform: scale(1.10);
+        &:hover {
+            transform: scale(1.10);
+        }
+    }
 }
 
 #carouselExample {

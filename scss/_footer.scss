@@ -3,7 +3,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3rem;
+    padding: 2.5rem;
     color: white;
 }
 
@@ -19,14 +19,14 @@ footer {
 .redesSociales {
     display: flex;
     justify-content: left;
-}
 
-.redesSociales img {
-    width: 40px;
-    display: block;
-    margin: 5px;
-}
+    img {
+        width: 40px;
+        display: block;
+        margin: 5px;
 
-.redesSociales img:hover {
-    transform: scale(1.10);
+        &:hover {
+            transform: scale(1.10);
+        }
+    }
 }
