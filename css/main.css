@@ -997,6 +997,9 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .buscadorSoporte {
+    font-size: 1rem;
+  }
   .containerArtistasTexto {
     width: 90%;
   }
