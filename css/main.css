@@ -82,6 +82,9 @@ nav ul li a::after {
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
+nav ul li a:hover::after {
+  width: 50%;
+}
 
 .logo {
   width: 180px;

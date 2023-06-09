@@ -52,7 +52,10 @@ nav {
                     transform: translateX(-50%);
                     background: white;
                     transition: width 0.3s;
+                }
 
+                &:hover::after {
+                    width: 50%;
                 }
             }
         }
