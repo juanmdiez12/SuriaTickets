@@ -635,7 +635,7 @@ footer {
           justify-content: left;
 }
 .redesSociales img {
-  width: 40px;
+  width: 50px;
   display: block;
   margin: 5px;
 }
@@ -847,13 +847,51 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1823px) {
   .indexCards {
-    width: 100%;
+    width: 700px;
   }
   .card {
-    width: 100%;
+    width: 715px;
   }
+  .cardCancelada {
+    width: 715px;
+  }
+}
+@media screen and (max-width: 1495px) {
+  .indexCards {
+    width: 600px;
+  }
+  .card {
+    width: 615px;
+  }
+  .cardCancelada {
+    width: 615px;
+  }
+}
+@media screen and (max-width: 1294px) {
+  .indexCards {
+    width: 500px;
+  }
+  .card {
+    width: 515px;
+  }
+  .cardCancelada {
+    width: 515px;
+  }
+}
+@media screen and (max-width: 1094px) {
+  .indexCards {
+    width: 450px;
+  }
+  .card {
+    width: 465px;
+  }
+  .cardCancelada {
+    width: 465px;
+  }
+}
+@media screen and (max-width: 1040px) {
   .buscador {
     width: 700px;
     display: -webkit-box;
@@ -889,6 +927,84 @@ footer {
   }
   #carouselExample {
     margin-left: 5.5rem;
+  }
+  .indexCards {
+    width: 400px;
+  }
+  .card {
+    width: 415px;
+  }
+  .cardCancelada {
+    width: 415px;
+  }
+}
+@media screen and (max-width: 894px) {
+  .indexCards {
+    width: 350px;
+  }
+  .card {
+    width: 365px;
+  }
+  .cardCancelada {
+    width: 365px;
+  }
+}
+@media screen and (max-width: 830px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: list-item;
+  }
+  .logo {
+    width: 9rem;
+    position: relative;
+    top: 0;
+  }
+  .logoIndex {
+    width: 12rem;
+    position: relative;
+    top: 0;
+  }
+  .container {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .containerTaylorSwift {
+    height: 500px;
+    border-top-left-radius: 0px;
+    background-position: right;
+  }
+  .containerKendrickLamar {
+    height: 500px;
+    border-top-left-radius: 0px;
+    background-position: right;
+  }
+  .containerJoji {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .containerTylerTheCreator {
+    height: 500px;
+    border-top-left-radius: 0px;
+  }
+  .logoArtista img {
+    width: 100%;
+  }
+  .indexCards {
+    width: 300px;
+  }
+  .card {
+    width: 315px;
+  }
+  .cardCancelada {
+    width: 315px;
   }
 }
 @media screen and (max-width: 700px) {
