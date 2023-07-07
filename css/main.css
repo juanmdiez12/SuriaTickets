@@ -937,6 +937,14 @@ footer {
   .cardCancelada {
     width: 415px;
   }
+  .suriaLogoFAQ {
+    display: none;
+  }
+  .suriaLogoFAQResponsive {
+    display: block;
+    width: 10rem;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 894px) {
   .indexCards {
@@ -1085,6 +1093,9 @@ footer {
   .card {
     width: 100%;
   }
+  .cardCancelada {
+    width: 100%;
+  }
   .buscador {
     width: 100%;
     display: -webkit-box;
@@ -1122,14 +1133,6 @@ footer {
   }
   .textoSoporte {
     border-radius: 30px;
-  }
-  .suriaLogoFAQ {
-    display: none;
-  }
-  .suriaLogoFAQResponsive {
-    display: block;
-    width: 10rem;
-    margin: 0;
   }
   .containerFAQ {
     width: 100%;
