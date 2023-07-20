@@ -137,9 +137,9 @@ const comprarEntradas = () => {
                 break;
         }
 
-        const disponibilidad = 100;
+        const disponibilidad = 5;
         if (cantidadEntradas > disponibilidad) {
-            alert("Lo sentimos, no hay suficientes entradas disponibles.");
+            alert("Lo sentimos, no se puede comprar mas de 5 entradas por ingreso.");
             continue;
         }
 
