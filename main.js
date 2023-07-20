@@ -14,6 +14,8 @@ const comprarEntradas = () => {
     let continuarComprando = true;
 
     while (continuarComprando) {
+        let errorEnValidacion = false;
+
         const artista = prompt(
             "Ingrese el número correspondiente al artista:\n" +
             "1. Taylor Swift - The Eras Tour\n" +
@@ -24,6 +26,24 @@ const comprarEntradas = () => {
             "6. TheWeeknd - After Hours Till Dawn Tour (ENTRADAS AGOTADAS)\n" +
             "7. Childish Gambino - This Is America Tour(ENTRADAS AGOTADAS)"
         );
+
+        if (artista === null) {
+            continuarComprando = false;
+            break;
+        }
+
+        switch (artista) {
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+                break;
+            default:
+                alert("Artista inválido. Por favor, ingrese un número válido o ingrese un artista con entradas disponibles.");
+                errorEnValidacion = true;
+        }
+
+        if (errorEnValidacion) continue;
         const ubicacion = prompt(
             "Ingrese el número correspondiente a la ubicación:\n" +
             "1. Platea baja($50000)\n" +
@@ -31,13 +51,60 @@ const comprarEntradas = () => {
             "3. Campo Trasero ($40000)\n" +
             "4. Platea alta ($35000)"
         );
+
+        if (ubicacion === null) {
+            continuarComprando = false;
+            break;
+        }
+
+        switch (ubicacion) {
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+                break;
+            default:
+                alert("Ubicación inválida. Por favor, ingrese un número válido.");
+                errorEnValidacion = true;
+        }
+
+        if (errorEnValidacion) continue;
+
         const cantidadEntradas = prompt("Ingrese la cantidad de entradas a comprar:");
+
+        if (cantidadEntradas === null) {
+            continuarComprando = false;
+            break;
+        }
+
+        if (isNaN(cantidadEntradas) || cantidadEntradas <= 0) {
+            alert("Por favor, ingrese una cantidad válida de entradas.");
+            continue;
+        }
+
         const metodoPago = prompt(
             "Seleccione el método de pago:\n" +
             "1. Efectivo\n" +
             "2. 3 cuotas sin interés\n" +
             "3. 6 cuotas sin interés"
         );
+
+        if (metodoPago === null) {
+            continuarComprando = false;
+            break;
+        }
+
+        switch (metodoPago) {
+            case "1":
+            case "2":
+            case "3":
+                break;
+            default:
+                alert("Método de pago inválido. Se asumirá el pago en efectivo.");
+                errorEnValidacion = true;
+        }
+
+        if (errorEnValidacion) continue;
 
         let artistaIndex, ubicacionIndex;
         switch (artista) {
@@ -53,9 +120,6 @@ const comprarEntradas = () => {
             case "4":
                 artistaIndex = 3;
                 break;
-            default:
-                alert("Artista inválido. Por favor, ingrese un número válido o ingrese un artista con entradas disponibles.");
-                continue;
         }
 
         switch (ubicacion) {
@@ -71,13 +135,11 @@ const comprarEntradas = () => {
             case "4":
                 ubicacionIndex = 3;
                 break;
-            default:
-                alert("Ubicación inválida. Por favor, ingrese un número válido.");
-                continue;
         }
 
-        if (isNaN(cantidadEntradas) || cantidadEntradas <= 0) {
-            alert("Por favor, ingrese una cantidad válida de entradas.");
+        const disponibilidad = 100;
+        if (cantidadEntradas > disponibilidad) {
+            alert("Lo sentimos, no hay suficientes entradas disponibles.");
             continue;
         }
 
@@ -113,7 +175,6 @@ const comprarEntradas = () => {
 comprarEntradas();
 
 /*
-
 let producto = { id: 1, nombre: "Arroz", precio: 125 };
 
 let contenedor = document.createElement("div")
