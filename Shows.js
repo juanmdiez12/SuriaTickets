@@ -1,4 +1,4 @@
-/*const shows =
+const shows =
     [
         {
             id: 1,
@@ -6,7 +6,8 @@
             tipo: "Internacional",
             fechas: "9, 10 y 11 de noviembre",
             lugar: "Estadio River Plate (Mâs Monumental)",
-            img: "./assets/pages/TaylorSwift.html",
+            img: "./assets/img/taylorswift_card.jpg",
+            link: "./assets/pages/TaylorSwift.html",
             cantidad: 5
         },
 
@@ -16,7 +17,8 @@
             tipo: "Internacional",
             fechas: "28 de agosto",
             lugar: "Rogers Arena",
-            img: "./assets/pages/KendrickLamar.html",
+            img: "./assets/img/kendrick_lamar_card.jpeg",
+            link: "./assets/pages/KendrickLamar.html",
             cantidad: 5
         },
 
@@ -27,6 +29,7 @@
             fechas: "6 de septiembre",
             lugar: "Wamu Theater",
             img: "./assets/img/joji_card.jpg",
+            link: "./assets/pages/Joji.html",
             cantidad: 5
         },
 
@@ -37,10 +40,12 @@
             fechas: "2 de abril",
             lugar: "Golden 1 Center",
             img: "./assets/img/tyler_the_creator_card.jpg",
+            link: "./assets/pages/TylerTheCreator.html",
             cantidad: 5
         },
     ];
-
+    
+/*
 const showNoDisponible =
     [
         {

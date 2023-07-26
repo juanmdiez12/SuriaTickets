@@ -1,4 +1,4 @@
-alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
+/*alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
 
 const artistas = ["Taylor Swift", "Kendrick Lamar", "JOJI", "Tyler The Creator"];
 const ubicaciones = ["Platea baja", "Campo delantero", "Campo trasero", "Platea alta"];
@@ -174,36 +174,25 @@ const comprarEntradas = () => {
 
 comprarEntradas();
 
-/*
-let producto = { id: 1, nombre: "Arroz", precio: 125 };
+*/
 
-let contenedor = document.createElement("div")
 
-contenedor.innerHTML = `
-<h3>ID: ${producto.id}</h3>
-<p>Producto: ${producto.nombre}</p>
-<b>$ ${producto.precio}</b>
-`
 
-document.body.appendChild(contenedor)
-
-const cardsShows = () => {
+const pintarShows = () => {
     const contenedor = document.getElementsByClassName("cardContainer")
 
     shows.forEach(show => {
         const div = document.createElement("div")
         div.className = "card"
         div.innerHTML = `
-        <a href="./assets/pages/TaylorSwift.html"><img src=${show.img}
-                        class="indexCards" alt="Taylor Swift - Eras Tour"></a>
-                <h1>${show.artista}</h1>
-                <h2>${show.fechas}</h2>
-                <h3>${show.lugar}</h3>
+        <a href=${show.link}><img src=${show.img}
+        class="indexCards" alt=${show.artista}></a>
+<h1>${show.artista}</h1>
+<h2>${show.fechas}</h2>
+<h3>${show.lugar}</h3>
 `
         contenedor.appendChild(div)
     })
 }
 
-cardsShows()
-
-*/
+pintarShows()
