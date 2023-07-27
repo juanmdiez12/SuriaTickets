@@ -1,4 +1,4 @@
-.cardContainer {
+#cardContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -71,6 +71,11 @@
 
         h4 {
             color: red;
+            transition: .4s;
+        }
+
+        img {
+            filter: blur(2px);
             transition: .4s;
         }
     }

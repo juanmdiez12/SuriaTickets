@@ -1,4 +1,5 @@
-/*alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
+/* ===== ALERT COMPRA ===== */
+alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
 
 const artistas = ["Taylor Swift", "Kendrick Lamar", "JOJI", "Tyler The Creator"];
 const ubicaciones = ["Platea baja", "Campo delantero", "Campo trasero", "Platea alta"];
@@ -172,14 +173,10 @@ const comprarEntradas = () => {
     alert("Gracias por su compra. ¡Hasta luego!\n-SuriaTickets");
 };
 
-comprarEntradas();
+/* ===== CARDS ===== */
 
-*/
-
-
-
-const pintarShows = () => {
-    const contenedor = document.getElementsByClassName("cardContainer")
+const Shows = () => {
+    const contenedor = document.getElementById("cardContainer")
 
     shows.forEach(show => {
         const div = document.createElement("div")
@@ -195,4 +192,23 @@ const pintarShows = () => {
     })
 }
 
-pintarShows()
+const ShowsCancelados = () => {
+    const contenedor = document.getElementById("cardContainer")
+    showsNoDisponibles.forEach(showCancelado => {
+        const div = document.createElement("div")
+        div.className = "cardCancelada"
+        div.innerHTML = `
+        <img src=${showCancelado.img} class="indexCards"
+                    alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
+                <h2>${showCancelado.artista}<h2>
+                        <h3>${showCancelado.fechas}<h3>
+                                <h4>${showCancelado.lugar}<h4>
+                                        <h1>${showCancelado.disponibilidad}<h1>
+`
+contenedor.appendChild(div)
+    })
+}
+
+comprarEntradas();
+Shows();
+ShowsCancelados();

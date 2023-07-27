@@ -56,8 +56,6 @@
 
 
 @media screen and (max-width: 1040px) {
-
-
     .buscador {
         width: 700px;
         display: flex;
@@ -119,6 +117,14 @@
         display: block;
         width: 10rem;
         margin: 0;
+    }
+
+    nav {
+        ul {
+            li {
+                display: list-item;
+            }
+        }
     }
 }
 
@@ -334,7 +340,7 @@
     }
 
     .textoSoporte {
-        border-radius: 30px;
+        border-radius: 128px 256px;
     }
 
     .containerFAQ {

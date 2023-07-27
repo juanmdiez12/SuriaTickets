@@ -44,9 +44,9 @@ const shows =
             cantidad: 5
         },
     ];
-    
-/*
-const showNoDisponible =
+
+
+const showsNoDisponibles =
     [
         {
             id: 1,
@@ -56,14 +56,14 @@ const showNoDisponible =
             lugar: "Mercedes Benz Stadium",
             disponibilidad: "SHOW CANCELADO",
             img: "./assets/img/kanye_west_card.jpg",
-            cantidad: 0
+            cantidad : 0
         },
 
         {
             id: 2,
             artista: "TheWeeknd - After Hours Till Dawn Tour",
             tipo: "Internacional",
-            fechas: "30 de julio",
+            fechas: "18 Y 19 de octubre",
             lugar: "Levi´s &copy Stadium",
             disponibilidad: "ENTRADAS AGOTADAS",
             img: "./assets/img/weeknd_card.jpeg",
@@ -80,4 +80,4 @@ const showNoDisponible =
             img: "./assets/img/gambino_card.jpg",
             cantidad: 0
         },
-    ];*/
+    ];
