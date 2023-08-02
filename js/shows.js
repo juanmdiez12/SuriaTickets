@@ -1,4 +1,4 @@
-const shows =
+const showsDisponibles =
     [
         {
             id: 1,
@@ -44,7 +44,6 @@ const shows =
             cantidad: 5
         },
     ];
-
 
 const showsNoDisponibles =
     [
