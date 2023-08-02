@@ -56,7 +56,7 @@ const showsNoDisponibles =
             lugar: "Mercedes Benz Stadium",
             disponibilidad: "SHOW CANCELADO",
             img: "./assets/img/kanye_west_card.jpg",
-            cantidad : 0
+            cantidad: 0
         },
 
         {

@@ -14,6 +14,9 @@
     <meta property="og:image" content="./assets/img/suria_fondo_naranja.jpeg">
     <meta property="og:type" content="Website" />
     <meta property="og:locale" content="es_ES" />
+
+    <!-- ===== LINKS ===== -->
+
     <link rel=" icon" href="./assets/img/suria_logo_ico.ico">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
@@ -22,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
+
+<!-- ===== HEADER ===== -->
 
 <body>
     <header>
@@ -33,12 +38,14 @@
                     <li><a href="./index.html">INICIO</a></li>
                     <li><a href="./assets/pages/Ingresar.html">INGRESAR</a></li>
                     <li><a href="./assets/pages/Registrarse.html">REGISTRARSE</a></li>
-                    <li><a href="">MIS ENTRADAS</a></li>
+                    <li><a href="">ENTRADAS🛒</a></li>
                     <li><a href="./assets/pages/Soporte.html">SOPORTE</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- ===== BARRA DE BUSQUEDA ===== -->
 
     <main>
         <div class="barraDeBusqueda" data-aos="zoom-in" data-aos-duration="1000">
@@ -51,9 +58,14 @@
 
         <h1 class="tituloIndex">ARTISTAS Y COMPRA DE TICKETS</h1>
 
+        <!-- ===== CARDS ===== -->
+
         <div id="cardContainer">
+
         </div>
     </main>
+
+    <!-- ===== FOOTER ===== -->
 
     <footer>
         <div class="redesSociales">
@@ -71,15 +83,26 @@
                 src="./assets/img/sol.png" alt="Logo del sol de SuriaTickets" loading="eager"></a>
     </footer>
 
+    <!-- ===== SCRIPTS ===== -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
 
-    <script src="Shows.js">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/shows.js">
     </script>
 
-    <script src="main.js">
+    <script src="./js/modal.js">
+    </script>
+
+    <script src="./js/main.js">
+    </script>
+
+    <script src="./js/index.js">
     </script>
 
 </body>

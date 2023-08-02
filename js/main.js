@@ -1,4 +1,5 @@
 /* ===== ALERT COMPRA ===== */
+/*
 alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
 
 const artistas = ["Taylor Swift", "Kendrick Lamar", "JOJI", "Tyler The Creator"];
@@ -172,6 +173,7 @@ const comprarEntradas = () => {
 
     alert("Gracias por su compra. ¡Hasta luego!\n-SuriaTickets");
 };
+/*
 
 /* ===== CARDS ===== */
 
@@ -205,10 +207,10 @@ const ShowsCancelados = () => {
                                 <h4>${showCancelado.lugar}<h4>
                                         <h1>${showCancelado.disponibilidad}<h1>
 `
-contenedor.appendChild(div)
+        contenedor.appendChild(div)
     })
 }
 
-comprarEntradas();
+//comprarEntradas();
 Shows();
 ShowsCancelados();
