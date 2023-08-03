@@ -1,4 +1,121 @@
+const Shows = () => {
+    const contenedor = document.getElementById("cardContainer");
+    const barraBusqueda = document.getElementById("barraBusqueda");
+
+    const filtrarShowsDisponible = (term) => {
+        return showsDisponibles.filter((show) =>
+            show.artista.toLowerCase().includes(term.toLowerCase())
+        );
+    };
+
+    const filtrarShowsNoDisponible = (term) => {
+        return showsNoDisponibles.filter((show) =>
+            show.artista.toLowerCase().includes(term.toLowerCase())
+        );
+    };
+
+    const limpiarContenedor = () => {
+        contenedor.innerHTML = "";
+    };
+
+    const mostrarShowsDisponiblesFiltrados = (showsFiltrados) => {
+        showsFiltrados.forEach((show) => {
+            const div = document.createElement("div");
+            div.className = "card";
+            div.innerHTML = `
+        <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
+        <h1>${show.artista}</h1>
+        <h2>${show.fechas}</h2>
+        <h3>${show.lugar}</h3>
+        `;
+            contenedor.appendChild(div);
+        });
+    };
+
+    const mostrarShowsNoDisponiblesFiltrados = (showsNoDisponiblesFiltrados) => {
+        showsNoDisponiblesFiltrados.forEach((showCancelado) => {
+            const div = document.createElement("div");
+            div.className = "cardCancelada";
+            div.innerHTML = `
+            <img src=${showCancelado.img} class="indexCards"
+                    alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
+                <h2>${showCancelado.artista}<h2>
+                        <h3>${showCancelado.fechas}<h3>
+                                <h4>${showCancelado.lugar}<h4>
+                                        <h1>${showCancelado.disponibilidad}<h1>
+        `;
+            contenedor.appendChild(div);
+        });
+    };
+
+    barraBusqueda.addEventListener("input", (event) => {
+        const searchTerm = event.target.value.trim();
+        if (searchTerm !== "") {
+            const showsFiltrados = filtrarShowsDisponible(searchTerm);
+            const showsNoDisponiblesFiltrados = filtrarShowsNoDisponible(searchTerm);
+            limpiarContenedor();
+            mostrarShowsDisponiblesFiltrados(showsFiltrados);
+            mostrarShowsNoDisponiblesFiltrados(showsNoDisponiblesFiltrados);
+        } else {
+            limpiarContenedor();
+            showsDisponibles.forEach((show) => {
+                const div = document.createElement("div");
+                div.className = "card";
+                div.innerHTML = `
+            <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
+            <h1>${show.artista}</h1>
+            <h2>${show.fechas}</h2>
+            <h3>${show.lugar}</h3>
+        `;
+                contenedor.appendChild(div);
+            });
+
+            showsNoDisponibles.forEach((showCancelado) => {
+                const div = document.createElement("div")
+                div.className = "cardCancelada"
+                div.innerHTML = `
+                <img src=${showCancelado.img} class="indexCards"
+                            alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
+                        <h2>${showCancelado.artista}<h2>
+                                <h3>${showCancelado.fechas}<h3>
+                                        <h4>${showCancelado.lugar}<h4>
+                                                <h1>${showCancelado.disponibilidad}<h1>
+        `;
+                contenedor.appendChild(div)
+            });
+        }
+    });
+
+    showsDisponibles.forEach((show) => {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `
+        <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
+        <h1>${show.artista}</h1>
+        <h2>${show.fechas}</h2>
+        <h3>${show.lugar}</h3>
+    `;
+        contenedor.appendChild(div);
+    });
+
+    showsNoDisponibles.forEach((showCancelado) => {
+        const div = document.createElement("div")
+        div.className = "cardCancelada"
+        div.innerHTML = `
+        <img src=${showCancelado.img} class="indexCards"
+                    alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
+                <h2>${showCancelado.artista}<h2>
+                        <h3>${showCancelado.fechas}<h3>
+                                <h4>${showCancelado.lugar}<h4>
+                                        <h1>${showCancelado.disponibilidad}<h1>
+`;
+        contenedor.appendChild(div)
+    });
+};
+
+
 /* ===== ALERT COMPRA ===== */
+
 /*
 alert("Bienvenido a SuriaTickets!! \nEl mejor sitio de Argentina para comprar tus entradas!!")
 
@@ -173,104 +290,5 @@ const comprarEntradas = () => {
 
     alert("Gracias por su compra. ¡Hasta luego!\n-SuriaTickets");
 }; */
-
-const Shows = () => {
-    const contenedor = document.getElementById("cardContainer");
-    const barraBusqueda = document.getElementById("barraBusqueda");
-
-    const filtrarShowsDisponible = (term) => {
-        return showsDisponibles.filter((show) =>
-            show.artista.toLowerCase().includes(term.toLowerCase())
-        );
-    };
-
-    const filtrarShowsNoDisponible = (term) => {
-        return showsNoDisponibles.filter((show) =>
-            show.artista.toLowerCase().includes(term.toLowerCase())
-        );
-    };
-
-    const limpiarContenedor = () => {
-        contenedor.innerHTML = "";
-    };
-
-    const mostrarShowsDisponiblesFiltrados = (showsFiltrados) => {
-        showsFiltrados.forEach((show) => {
-            const div = document.createElement("div");
-            div.className = "card";
-            div.innerHTML = `
-        <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
-        <h1>${show.artista}</h1>
-        <h2>${show.fechas}</h2>
-        <h3>${show.lugar}</h3>
-        `;
-            contenedor.appendChild(div);
-        });
-    };
-
-    const mostrarShowsNoDisponiblesFiltrados = (showsFiltrados) => {
-        showsFiltrados.forEach((showCancelado) => {
-            const div = document.createElement("div");
-            div.className = "card";
-            div.innerHTML = `
-            <img src=${showCancelado.img} class="indexCards"
-                    alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
-                <h2>${showCancelado.artista}<h2>
-                        <h3>${showCancelado.fechas}<h3>
-                                <h4>${showCancelado.lugar}<h4>
-                                        <h1>${showCancelado.disponibilidad}<h1>
-        `;
-            contenedor.appendChild(div);
-        });
-    };
-
-    barraBusqueda.addEventListener("input", (event) => {
-        const searchTerm = event.target.value.trim();
-        if (searchTerm !== "") {
-            const showsFiltrados = filtrarShowsDisponible(searchTerm);
-            limpiarContenedor();
-            mostrarShowsDisponiblesFiltrados(showsFiltrados);
-        } else {
-            limpiarContenedor();
-            showsDisponibles.forEach((show) => {
-                const div = document.createElement("div");
-                div.className = "card";
-                div.innerHTML = `
-            <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
-            <h1>${show.artista}</h1>
-            <h2>${show.fechas}</h2>
-            <h3>${show.lugar}</h3>
-        `;
-                contenedor.appendChild(div);
-            });
-        }
-    });
-
-    showsDisponibles.forEach((show) => {
-        const div = document.createElement("div");
-        div.className = "card";
-        div.innerHTML = `
-        <a href=${show.link}><img src=${show.img} class="indexCards" alt=${show.artista}></a>
-        <h1>${show.artista}</h1>
-        <h2>${show.fechas}</h2>
-        <h3>${show.lugar}</h3>
-    `;
-        contenedor.appendChild(div);
-    });
-
-    showsNoDisponibles.forEach(showCancelado => {
-        const div = document.createElement("div")
-        div.className = "cardCancelada"
-        div.innerHTML = `
-        <img src=${showCancelado.img} class="indexCards"
-                    alt=${showCancelado.artista} ${showCancelado.disponibilidad}>
-                <h2>${showCancelado.artista}<h2>
-                        <h3>${showCancelado.fechas}<h3>
-                                <h4>${showCancelado.lugar}<h4>
-                                        <h1>${showCancelado.disponibilidad}<h1>
-`;
-        contenedor.appendChild(div)
-    });
-};
 
 //comprarEntradas();
