@@ -1,9 +1,9 @@
-const Shows = () => {
+const pintarProductos = () => {
     const contenedor = document.getElementById("cardContainer");
     const barraBusqueda = document.getElementById("barraBusqueda");
 
     const filtrarShowsDisponible = (term) => {
-        return showsDisponibles.filter((show) =>
+        return productos.filter((show) =>
             show.artista.toLowerCase().includes(term.toLowerCase())
         );
     };
@@ -27,6 +27,7 @@ const Shows = () => {
         <h1>${show.artista}</h1>
         <h2>${show.fechas}</h2>
         <h3>${show.lugar}</h3>
+        <button id="botonComprar" class="agregar">Comprar entrada</button>
         `;
             contenedor.appendChild(div);
         });
@@ -58,7 +59,7 @@ const Shows = () => {
             mostrarShowsNoDisponiblesFiltrados(showsNoDisponiblesFiltrados);
         } else {
             limpiarContenedor();
-            showsDisponibles.forEach((show) => {
+            productos.forEach((show) => {
                 const div = document.createElement("div");
                 div.className = "card";
                 div.innerHTML = `
@@ -66,6 +67,7 @@ const Shows = () => {
             <h1>${show.artista}</h1>
             <h2>${show.fechas}</h2>
             <h3>${show.lugar}</h3>
+            <button id="botonComprar" class="agregar">Comprar entrada</button>
         `;
                 contenedor.appendChild(div);
             });
@@ -86,7 +88,7 @@ const Shows = () => {
         }
     });
 
-    showsDisponibles.forEach((show) => {
+    productos.forEach((show) => {
         const div = document.createElement("div");
         div.className = "card";
         div.innerHTML = `
@@ -94,6 +96,7 @@ const Shows = () => {
         <h1>${show.artista}</h1>
         <h2>${show.fechas}</h2>
         <h3>${show.lugar}</h3>
+        <button id="botonComprar" class="agregar">Comprar entrada</button>
     `;
         contenedor.appendChild(div);
     });

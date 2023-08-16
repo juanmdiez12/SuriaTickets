@@ -38,7 +38,7 @@
                     <li><a href="./index.html">INICIO</a></li>
                     <li><a href="./assets/pages/Ingresar.html">INGRESAR</a></li>
                     <li><a href="./assets/pages/Registrarse.html">REGISTRARSE</a></li>
-                    <li><a href="">ENTRADAS🛒</a></li>
+                    <button id="abrirCarrito">ENTRADAS</button>
                     <li><a href="./assets/pages/Soporte.html">SOPORTE</a></li>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
             <form>
                 <input class="buscador" type="text" placeholder="Buscar Artista o Evento." name="search"
                     id="barraBusqueda">
-                <button class="botonBuscar" type="submit" id="botonBusqueda"></button>
+                <button class="botonBuscar" id="botonBusqueda"></button>
             </form>
         </div>
 
@@ -85,18 +85,10 @@
 
     <!-- ===== SCRIPTS ===== -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script src="./js/shows.js">
     </script>
 
-    <script src="./js/eventos.js">
+    <script src="./js/carrito.js">
     </script>
 
     <script src="./js/modal.js">
@@ -106,6 +98,19 @@
     </script>
 
     <script src="./js/index.js">
+    </script>
+
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
     </script>
 
 </body>

@@ -212,6 +212,10 @@
         width: 315px;
     }
 
+    #botonComprar {
+        width: 16rem;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -378,5 +382,10 @@
     #carouselExample {
         margin-left: 1.2rem;
         width: 90%;
+    }
+
+    #botonComprar {
+        width: 40%;
+        font-size: 2rem;
     }
 }

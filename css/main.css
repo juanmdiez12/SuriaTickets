@@ -87,6 +87,12 @@ nav ul li a:hover::after {
   width: 50%;
 }
 
+#abrirCarrito {
+  color: white;
+  background: none;
+  border: none;
+}
+
 .logo {
   width: 210px;
   cursor: pointer;
@@ -169,6 +175,38 @@ nav ul li a:hover::after {
 
 .indexCards {
   width: 865px;
+}
+
+#botonComprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(194, 24, 24);
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 1rem;
+  width: 20rem;
+}
+#botonComprar:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgb(0, 0, 0);
 }
 
 .card {
@@ -618,7 +656,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5rem;
+  padding: 3rem;
   color: white;
 }
 
@@ -735,7 +773,7 @@ footer {
   text-decoration: underline;
 }
 
-.submitComprar {
+.submitComprarArtista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,7 +784,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-weight: 500;
   font-size: 2rem;
@@ -758,7 +796,7 @@ footer {
   transition: 0.2s;
   margin: 1rem;
 }
-.submitComprar:hover {
+.submitComprarArtista:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -1023,6 +1061,9 @@ footer {
   .cardCancelada {
     width: 315px;
   }
+  #botonComprar {
+    width: 16rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .cuenta {
@@ -1178,17 +1219,21 @@ footer {
     margin-left: 1.2rem;
     width: 90%;
   }
+  #botonComprar {
+    width: 40%;
+    font-size: 2rem;
+  }
 }
 /*
                                             ⢀⣠⣤⣶⣶⣶⣶⣶⣤⣄⡀⠀⠀
                                         ⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⡀
                                     ⣠⣴⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣵⣄
-                                 ⢾⣻⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡀
+                                ⢾⣻⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⡀
                                 ⠸⣽⣻⠃⣿⡿⠋⣉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣏⡟⠉⡉⢻⣿⡌⣿⣳⡥⠀⠀⠀⠀
                                 ⢜⣳⡟⢸⣿⣷⣄⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣠⣼⣿⣇⢸⢧⢣⠀   HOLA PROFE
                                 ⠨⢳⠇⣸⣿⣿⢿⣿⣿⣿⣿⡿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠀⡟⢆⠀
                                 ⠈⠀⣾⣿⣿⣼⣿⣿⣿⣿⡀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣽⣿⣿⠐⠈⠀⠀
-                               ⢀⣀⣼⣷⣭⣛⣯⡝⠿⢿⣛⣋⣤⣤⣀⣉⣛⣻⡿⢟⣵⣟⣯⣶⣿⣄⡀⠀
-                             ⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣾⣶⣶⣴⣾⣿⣿⣿⣿⣿⣿⢿⣿⣿⣧
-                             ⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⡿ 
+                            ⢀⣀⣼⣷⣭⣛⣯⡝⠿⢿⣛⣋⣤⣤⣀⣉⣛⣻⡿⢟⣵⣟⣯⣶⣿⣄⡀⠀
+                            ⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣾⣶⣶⣴⣾⣿⣿⣿⣿⣿⣿⢿⣿⣿⣧
+                            ⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣿⡿
 */
